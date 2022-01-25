@@ -3,7 +3,7 @@ title: Work with multi-valued LOVs in Oracle APEX
 layout: default.liquid
 ---
 ## Blog!
-
+a
 ```
 SELECT LEVEL AS element_no,
        regexp_substr(str, '[^:]+', 1, LEVEL) AS value,

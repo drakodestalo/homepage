@@ -1,2 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>cobalt blog</title><link>http://localhost:3000</link><description>Blog Posts Go Here</description><item><title>First Post</title><link>http://localhost:3000/posts/post-1.html</link><description><![CDATA[<h1>This is our first Post!</h1>
-]]></description><guid>http://localhost:3000/posts/post-1.html</guid></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>Drako Malglata&apos;s Homepage</title><link>http://example.com</link><description>Just a bunch of random stuff</description></channel></rss>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Work with multi-valued LOVs in Oracle APEX</title>
+    </head>
+    <body>
+    <div>
+      <h2>Work with multi-valued LOVs in Oracle APEX</h2>
+      <h2>Blog!</h2>
+<p>a</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">SELECT LEVEL AS element_no,
+</span><span style="color:#c0c5ce;">       regexp_substr(str, &#39;[^:]+&#39;, 1, LEVEL) AS value,
+</span><span style="color:#c0c5ce;">  FROM ( SELECT rownum AS id,
+</span><span style="color:#c0c5ce;">                &#39;1:4&#39;     str
+</span><span style="color:#c0c5ce;">            FROM dual
+</span><span style="color:#c0c5ce;">       )
+</span><span style="color:#c0c5ce;"> CONNECT BY instr(str, &#39;:&#39;, 1, LEVEL - 1) &gt; 0
+</span><span style="color:#c0c5ce;">     AND id = PRIOR id
+</span><span style="color:#c0c5ce;">     AND PRIOR dbms_random.value IS NOT NULL
+</span></pre>
+    </div>
+  </body>
+</html>
